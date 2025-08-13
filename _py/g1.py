@@ -98,36 +98,7 @@ def main():
                 validar_cadena_individual(entrada)
             print()
 
-# Ejemplos de uso y pruebas
-def ejecutar_pruebas():
-    """
-    Ejecuta algunas pruebas de ejemplo.
-    """
-    print("=== PRUEBAS DE EJEMPLO ===")
-    pruebas = [
-        "0",      # ACEPTO (caso base)
-        "1",      # ACEPTO (caso base)  
-        "00",     # ACEPTO (0S0 donde S→0)
-        "11",     # ACEPTO (1S1 donde S→1)
-        "010",    # ACEPTO (0S0 donde S→1)
-        "101",    # ACEPTO (1S1 donde S→0)
-        "0110",   # ACEPTO (0S0 donde S→11)
-        "1001",   # ACEPTO (1S1 donde S→00)
-        "01010",  # ACEPTO
-        "10101",  # ACEPTO
-        "001100", # ACEPTO
-        "110011", # ACEPTO
-        "01",     # NO ACEPTA (no es palíndromo)
-        "10",     # NO ACEPTA (no es palíndromo)
-        "012",    # NO ACEPTA (contiene 2)
-        "abc",    # NO ACEPTA (no binario)
-        "0011",   # NO ACEPTA (no es palíndromo)
-        "",       # NO ACEPTA (cadena vacía)
-    ]
-    
-    for prueba in pruebas:
-        resultado = "ACEPTO" if es_palindromo_binario(prueba) else "NO ACEPTA"
-        print(f"'{prueba}' -> {resultado}")
+
 
 if __name__ == "__main__":
     # Uncomment the next line to run tests
